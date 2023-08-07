@@ -1,8 +1,12 @@
 FROM node:18-bullseye-slim
 
+
 EXPOSE 3000
 WORKDIR /app
 COPY . .
+
+RUN echo "deb http://archive.debian.org/debian/ jessie contrib main non-free\ndeb-src http://archive.debian.org/debian/ jessie main contrib non-free" >> /etc/apt/sources.list
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7638D0442B90D010
 
 RUN apt-get update
 RUN apt-get install ttf-mscorefonts-installer
