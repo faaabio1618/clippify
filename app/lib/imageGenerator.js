@@ -33,7 +33,7 @@ function printAtWordWrap(context, text, x, y, lineHeight, fitWidth) {
 }
 
 function drawBubble(ctx, w, h, radius, text) {
-  ctx.font = "15px Helvetica";
+  ctx.font = "15px";
   const x = 20;
   const y = 10;
   ctx.beginPath();

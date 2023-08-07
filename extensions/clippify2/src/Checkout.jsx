@@ -1,10 +1,6 @@
 import {Grid, Image, reactExtension, useApi, useCartLines, View,} from '@shopify/ui-extensions-react/checkout';
 import {useMemo, useState} from "react";
 
-export default reactExtension(
-  'purchase.checkout.block.render',
-  () => <Extension/>,
-);
 
 function Extension() {
   const cartLines = useCartLines()
@@ -28,3 +24,8 @@ function Extension() {
     </View>
   </Grid>
 }
+
+export default reactExtension(
+  'purchase.checkout.block.render',
+  () => <Extension/>,
+);
