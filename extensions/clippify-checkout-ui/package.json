@@ -1,0 +1,16 @@
+{
+  "name": "clippify-checkout-ui",
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "^17.0.0",
+    "@shopify/ui-extensions": "2023.7.0",
+    "@shopify/ui-extensions-react": "2023.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "typescript": "^5.0.0",
+    "@shopify/eslint-plugin": "^42.1.0"
+  }
+}
